@@ -17,10 +17,10 @@ public class MessageResource {
 	  }
 	  
 	  @GetMapping("/login")
-	    public String login(@RequestParam(required = false) String usuario, @RequestParam(required = false) String senha) {
-		  if(usuario.isEmpty() && senha.isEmpty()) {
+	    public String login(@RequestParam(required = false) String user, @RequestParam(required = false) String password) {
+		  if(user.isEmpty() && password.isEmpty()) {
 			  return "USUÁRIO E SENHA NÃO INFORMADOS";
-		  }if(usuario.length() > 15 && senha.length() > 15 ){
+		  }if(user.length() > 15 && password.length() > 15 ){
 			  return "USUÁRIO E SENHA INVÁLIDOS";
 		  }
 		  return "LOGIN EFETUADO COM SUCESSO !!!";
