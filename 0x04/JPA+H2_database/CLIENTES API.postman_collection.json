@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "1f27b54e-6d25-4a1a-a807-2bb58f3a14ef",
+		"name": "CLIENTES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Anderson\",\n    \"idade\": 12,\n    \"email\": \"anderson@techcamp.com\",\n    \"listaDeEndereco\": [\n        {\n           \"logradouro\": \"rua\",\n           \"endereco\": \"padre anclienta\",\n           \"numero\": 15,\n           \"bairro\": \"conceicao\",\n           \"cidade\": \"osasco\",\n           \"estado\": \"Sao Paulo\"\n        },\n        {\n           \"logradouro\": \"avenida\",\n           \"endereco\": \"rochedo anclienta\",\n           \"numero\": 1552,\n           \"bairro\": \"conceicaopenha\",\n           \"cidade\": \"sao paulo\",\n           \"estado\": \"Sao Paulo\" \n        }\n    ],\n    \"listaDeTelefone\": [\n        {\n            \"DDD\": 11,\n            \"numero\": 52418547\n        },\n        {\n            \"DDD\": 13,\n            \"numero\": 94524875\n\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_BY_ID",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
