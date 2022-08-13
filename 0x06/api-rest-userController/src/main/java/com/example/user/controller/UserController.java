@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/users")
 public class UserController {
     @GetMapping("/user-id/{id}")
-    public String findById(@PathVariable int id) {
+    public String findUserById(@PathVariable int id) {
         if (id > 0 && id < 100) {
             return "You have entered valid ID";
         } else {
